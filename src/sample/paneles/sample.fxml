@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="420.0" fitWidth="620.0" pickOnBounds="true" preserveRatio="true" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+            <image>
+                <Image url="@../../imagenes/fondo.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnEntrar" layoutX="258.0" layoutY="349.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="103.0" text="Entrar" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Italic" size="21.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#0d0d0d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+        <TextField fx:id="txtUser" layoutX="185.0" layoutY="182.0" prefHeight="50.0" prefWidth="249.0">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></TextField>
+        <PasswordField fx:id="pwField" layoutX="185.0" layoutY="275.0" prefHeight="50.0" prefWidth="249.0" />
+        <Label layoutX="265.0" layoutY="154.0" prefHeight="21.0" prefWidth="90.0" text="USUARIO" textAlignment="CENTER">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#574e4e" />
+                  <Stop color="#fcfcfc" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Bodoni MT Black" size="17.0" />
+         </font></Label>
+        <Label layoutX="245.0" layoutY="243.0" prefHeight="32.0" prefWidth="130.0" text="CONTRASEÑA">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#544040" />
+                  <Stop color="#fffefe" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Bodoni MT Black" size="17.0" />
+         </font>
+        </Label>
+        <!--> inicia encabezado <-->
+        <ImageView fitHeight="143.0" fitWidth="772.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../imagenes/encabezado.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutY="41.0" prefHeight="56.0" prefWidth="460.0" text="Bienvenidos" textOverrun="CLIP">
+            <font>
+                <Font name="Bodoni MT Black" size="48.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.6857142857142857" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="RED" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <VBox layoutX="482.0" prefHeight="137.0" prefWidth="130.0">
+            <children>
+                <ImageView fx:id="imgUsuario" fitHeight="100.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="lblNombre" alignment="CENTER" prefHeight="23.0" prefWidth="123.0" textFill="#fcfcfc">
+                    <font>
+                        <Font name="Bodoni MT Black" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+
+        <!--> termina encabezado <-->
+    </children>
+</Pane>

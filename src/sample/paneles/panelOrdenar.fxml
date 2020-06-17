@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="642.0" fitWidth="1136.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../imagenes/fondo.jpg" />
+            </image>
+        </ImageView>
+        <!--> inicia encabezado <-->
+        <ImageView fitHeight="174.0" fitWidth="1136.0" layoutY="-91.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../imagenes/encabezado.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="6.0" layoutY="18.0" prefHeight="56.0" prefWidth="773.0" text="Ordenes" textOverrun="CLIP">
+            <font>
+                <Font name="Bodoni MT Black" size="48.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.6857142857142857" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="RED" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Label fx:id="lblNombre" alignment="CENTER" layoutX="803.0" layoutY="35.0" prefHeight="23.0" prefWidth="123.0" textFill="#fcfcfc">
+            <font>
+                <Font name="Bodoni MT Black" size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblProducto" layoutX="23.0" layoutY="160.0" prefHeight="330.0" prefWidth="531.0">
+         <columns>
+            <TableColumn fx:id="idProducto" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="producto" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="descripcion" prefWidth="75.0" text="Desc." />
+            <TableColumn fx:id="precio" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="costo" prefWidth="75.0" text="Costo" />
+            <TableColumn fx:id="idTipoProducto" prefWidth="75.0" text="TipoProducto" />
+         </columns></TableView>
+        <Button fx:id="btnAgregar" layoutX="598.0" layoutY="160.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" text="Agregar A Orden" />
+        <TableView fx:id="tblOrden" layoutX="742.0" layoutY="160.0" prefHeight="330.0" prefWidth="369.0">
+            <columns>
+                <TableColumn fx:id="idOrden" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="cantidad" prefWidth="75.0" text="Cantidad" />
+                <TableColumn fx:id="fecha" prefWidth="75.0" text="Fecha" />
+                <TableColumn fx:id="total" prefWidth="75.0" text="Total" />
+                <TableColumn fx:id="idProducto2" prefWidth="75.0" text="IdProd." />
+                <TableColumn fx:id="noEmpleado" prefWidth="75.0" text="IdEmpleado" />
+                <TableColumn fx:id="idMesa" prefWidth="75.0" text="Mesa" />
+            </columns></TableView>
+        <Button fx:id="btnCerrar" layoutX="597.0" layoutY="390.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="123.0" text="Cerrar Orden" />
+        <Button fx:id="btnCancelar" layoutX="596.0" layoutY="310.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" text="Cancelar Orden" />
+        <Button fx:id="btnEliminar" layoutX="596.0" layoutY="231.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" text="Eliminar De Orden" />
+        <ComboBox fx:id="cmbTipoProducto" layoutX="121.0" layoutY="119.0" prefWidth="150.0" />
+        <Label layoutX="583.0" layoutY="117.0" prefHeight="30.0" prefWidth="61.0" text="MESA:" textFill="#fcfcfc">
+            <font>
+                <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblMesa" layoutX="647.0" layoutY="117.0" prefHeight="30.0" prefWidth="61.0" textFill="#fcfcfc">
+            <font>
+                <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblFecha" layoutX="773.0" layoutY="117.0" prefHeight="30.0" prefWidth="149.0" textFill="#fcfcfc">
+            <font>
+                <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+        </Label>
+      <Button fx:id="btnBuscar" layoutX="289.0" layoutY="119.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Buscar" />
+    </children>
+</Pane>

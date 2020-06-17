@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="367.0" fitWidth="830.0" layoutY="3.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../imagenes/fondo.jpg" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tblOrden" layoutY="-4.0" prefHeight="377.0" prefWidth="531.0">
+            <columns>
+                <TableColumn fx:id="idOrden" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="cantidad" prefWidth="56.0" text="Cantidad" />
+                <TableColumn fx:id="fecha" prefWidth="155.00001525878906" text="Fecha" />
+                <TableColumn fx:id="total" prefWidth="43.0" text="Total" />
+                <TableColumn fx:id="idProducto" prefWidth="65.0" text="Prod." />
+                <TableColumn fx:id="noEmpleado" prefWidth="75.0" text="Empleado" />
+                <TableColumn fx:id="idMesa" prefWidth="58.0" text="Mesa" />
+            </columns>
+        </TableView>
+        <Label layoutX="571.0" layoutY="140.0" text="Cantidad:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCantidad" layoutX="656.0" layoutY="141.0" />
+        <Button fx:id="btnActualizar" layoutX="630.0" layoutY="184.0" mnemonicParsing="false" text="Actualizar" />
+        <Button fx:id="btnEliminar" layoutX="665.0" layoutY="255.0" mnemonicParsing="false" text="Eliminar Orden" />
+        <Button fx:id="btnRegresar" layoutX="723.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Regresar" />
+      <Button fx:id="btnGanancias" layoutX="664.0" layoutY="218.0" mnemonicParsing="false" text="Obt. Ganancias" />
+    </children>
+</Pane>
